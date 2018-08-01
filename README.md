@@ -1,4 +1,9 @@
-st1 = input("Enter String 1 : ")
+st1 = raw_input("Enter String 1 : ")
+st1 = st1.replace(' ', '')
+st1=st1.replace(" ", "")
+
+print(st1)
+
 list1 = []
 list2 = []
 end=0
@@ -11,6 +16,7 @@ for i in range(length):
         list1.append(st1[i])
     else:
         list2.append(st1[i])
+
 sto1=''.join(list1)
 sto2=''.join(list2)
 
